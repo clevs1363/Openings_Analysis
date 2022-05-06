@@ -1,0 +1,682 @@
+{
+    "Van't Kruijs Opening": [
+        397908,
+        13238726
+    ],
+    "Russian Game": [
+        194393,
+        5996388
+    ],
+    "King's Gambit Accepted": [
+        176045,
+        5360169
+    ],
+    "Indian Game": [
+        376842,
+        13243411
+    ],
+    "Scandinavian Defense": [
+        915504,
+        30572602
+    ],
+    "Four Knights Game": [
+        234623,
+        7527294
+    ],
+    "Anderssen Opening": [
+        15104,
+        521742
+    ],
+    "Queen's Pawn Game": [
+        1232878,
+        42343523
+    ],
+    "Sicilian Defense": [
+        2211019,
+        75308284
+    ],
+    "Philidor Defense": [
+        554643,
+        18868762
+    ],
+    "Caro-Kann Defense": [
+        681696,
+        23904999
+    ],
+    "Zukertort Opening": [
+        427786,
+        14630680
+    ],
+    "Gr\u00c3\u00bcnfeld Defense": [
+        46795,
+        1675933
+    ],
+    "French Defense": [
+        1342666,
+        45728642
+    ],
+    "English Opening": [
+        662189,
+        23241779
+    ],
+    "Slav Defense": [
+        239069,
+        8480022
+    ],
+    "Nimzo-Indian Defense": [
+        125584,
+        4406804
+    ],
+    "R\u00c3\u00a9ti Opening": [
+        71155,
+        2415977
+    ],
+    "Nimzo-Larsen Attack": [
+        324226,
+        11267640
+    ],
+    "Semi-Slav Defense": [
+        110701,
+        3989325
+    ],
+    "Owen Defense": [
+        245801,
+        8273048
+    ],
+    "Italian Game": [
+        668162,
+        21087974
+    ],
+    "Queen's Pawn": [
+        197132,
+        6666322
+    ],
+    "Pterodactyl Defense": [
+        9896,
+        348784
+    ],
+    "Torre Attack": [
+        42210,
+        1529701
+    ],
+    "Queen's Gambit Declined": [
+        380101,
+        13272831
+    ],
+    "Mieses Opening": [
+        164614,
+        5739546
+    ],
+    "Modern Defense": [
+        486343,
+        16964678
+    ],
+    "Hungarian Opening": [
+        375624,
+        13237006
+    ],
+    "Benko Gambit Accepted": [
+        9285,
+        342877
+    ],
+    "Queen's Pawn Opening": [
+        8419,
+        268620
+    ],
+    "Scotch Game": [
+        346804,
+        11142848
+    ],
+    "Robatsch (Modern) Defense": [
+        95522,
+        3356364
+    ],
+    "King's Pawn": [
+        24647,
+        178141
+    ],
+    "Center Game": [
+        144741,
+        4489507
+    ],
+    "Ruy Lopez": [
+        478734,
+        16133409
+    ],
+    "King's Indian Defense": [
+        205207,
+        7493650
+    ],
+    "Old Benoni Defense": [
+        135580,
+        4742455
+    ],
+    "Bird Opening": [
+        195760,
+        6711824
+    ],
+    "Amar Opening": [
+        9031,
+        295502
+    ],
+    "Bishop's Opening": [
+        333486,
+        10537577
+    ],
+    "Giuoco Piano": [
+        62333,
+        2020345
+    ],
+    "Nimzowitsch Defense": [
+        228614,
+        7395775
+    ],
+    "Canard Opening": [
+        7579,
+        272211
+    ],
+    "Horwitz Defense": [
+        289777,
+        10038649
+    ],
+    "King's Pawn Game": [
+        719334,
+        22412333
+    ],
+    "Dutch Defense": [
+        112651,
+        3886675
+    ],
+    "Old Indian": [
+        5362,
+        200486
+    ],
+    "Colle System": [
+        42833,
+        1543578
+    ],
+    "Ware Opening": [
+        17900,
+        599725
+    ],
+    "Englund Gambit Declined": [
+        65386,
+        2116716
+    ],
+    "Slav Indian": [
+        5720,
+        202604
+    ],
+    "Pirc Defense": [
+        316286,
+        10991082
+    ],
+    "Blackmar-Diemer Gambit Declined": [
+        6668,
+        219016
+    ],
+    "Saragossa Opening": [
+        65531,
+        2276612
+    ],
+    "Alekhine Defense": [
+        230586,
+        7738397
+    ],
+    "Old Indian Defense": [
+        56614,
+        2012673
+    ],
+    "Queen's Gambit Accepted": [
+        217423,
+        7023607
+    ],
+    "King's Gambit Declined": [
+        76505,
+        2319274
+    ],
+    "King's Knight Opening": [
+        94685,
+        2894239
+    ],
+    "Benoni Defense": [
+        108696,
+        3785593
+    ],
+    "Goldsmith Defense": [
+        11963,
+        378771
+    ],
+    "Three Knights Opening": [
+        99731,
+        3234082
+    ],
+    "Polish Opening": [
+        92683,
+        3149958
+    ],
+    "Queen's Gambit Refused": [
+        250977,
+        8210903
+    ],
+    "Petrov's Defense": [
+        64178,
+        2037192
+    ],
+    "English Defense": [
+        117977,
+        4102564
+    ],
+    "Blackmar-Diemer Gambit": [
+        62918,
+        1924684
+    ],
+    "Barnes Defense": [
+        13338,
+        412509
+    ],
+    "Queen's Indian Defense": [
+        20417,
+        761991
+    ],
+    "Danish Gambit Accepted": [
+        18419,
+        540338
+    ],
+    "Danish Gambit": [
+        37963,
+        1190298
+    ],
+    "King's Indian Attack": [
+        98598,
+        3621586
+    ],
+    "Neo-Gr\u00c3\u00bcnfeld Defense": [
+        11403,
+        430585
+    ],
+    "Vienna Game": [
+        179264,
+        5788274
+    ],
+    "St. George Defense": [
+        38173,
+        1312167
+    ],
+    "Budapest Defense": [
+        21925,
+        728406
+    ],
+    "Trompowsky Attack": [
+        42138,
+        1485845
+    ],
+    "King's Gambit": [
+        65368,
+        2015216
+    ],
+    "Gedult's Opening": [
+        21244,
+        697419
+    ],
+    "Englund Gambit Complex Declined": [
+        12622,
+        406379
+    ],
+    "Ponziani Opening": [
+        46437,
+        1534556
+    ],
+    "Borg Defense": [
+        11515,
+        346835
+    ],
+    "Latvian Gambit Accepted": [
+        13645,
+        418028
+    ],
+    "Rat Defense": [
+        94812,
+        3312909
+    ],
+    "Van Geet Opening": [
+        89020,
+        2945842
+    ],
+    "King's Pawn Opening": [
+        12923,
+        416122
+    ],
+    "Ware Defense": [
+        12550,
+        393548
+    ],
+    "Clemenz Opening": [
+        12972,
+        419075
+    ],
+    "Mikenas Defense": [
+        40573,
+        1301506
+    ],
+    "Richter-Veresov Attack": [
+        11023,
+        374891
+    ],
+    "Englund Gambit Complex": [
+        45501,
+        1418373
+    ],
+    "East Indian Defense": [
+        20622,
+        756888
+    ],
+    "Grob Opening": [
+        51774,
+        1661775
+    ],
+    "Tarrasch Defense": [
+        22868,
+        778876
+    ],
+    "Nimzowitsch-Larsen Attack": [
+        9067,
+        321170
+    ],
+    "Englund Gambit": [
+        72256,
+        2224542
+    ],
+    "Blumenfeld Countergambit": [
+        6563,
+        230594
+    ],
+    "Paleface Attack": [
+        5157,
+        173701
+    ],
+    "Elephant Gambit": [
+        52058,
+        1591732
+    ],
+    "Catalan Opening": [
+        16407,
+        612337
+    ],
+    "Wade Defense": [
+        2895,
+        104416
+    ],
+    "London System": [
+        20477,
+        757198
+    ],
+    "Mexican Defense": [
+        5890,
+        192895
+    ],
+    "Kadas Opening": [
+        26186,
+        835475
+    ],
+    "Carr Defense": [
+        8392,
+        272871
+    ],
+    "Danish Gambit Declined": [
+        4534,
+        152759
+    ],
+    "Center Game Accepted": [
+        2890,
+        79437
+    ],
+    "Petrov": [
+        9236,
+        279163
+    ],
+    "Franco-Benoni Defense": [
+        18934,
+        646525
+    ],
+    "Kangaroo Defense": [
+        6249,
+        215565
+    ],
+    "Amazon Attack": [
+        6822,
+        204765
+    ],
+    "Guatemala Defense": [
+        2810,
+        101338
+    ],
+    "Latvian Gambit": [
+        16520,
+        490821
+    ],
+    "Czech Defense": [
+        8299,
+        297267
+    ],
+    "Duras Gambit": [
+        21937,
+        673070
+    ],
+    "Lasker Simul Special": [
+        4692,
+        163029
+    ],
+    "Queen's Gambit": [
+        15063,
+        466916
+    ],
+    "King's Indian": [
+        1686,
+        64801
+    ],
+    "Yusupov-Rubinstein System": [
+        11361,
+        416354
+    ],
+    "Lion Defense": [
+        5651,
+        199084
+    ],
+    "Polish Defense": [
+        8359,
+        276526
+    ],
+    "Gunderam Defense": [
+        7089,
+        234552
+    ],
+    "Portuguese Opening": [
+        7485,
+        232178
+    ],
+    "Bogo-Indian Defense": [
+        7976,
+        297508
+    ],
+    "Valencia Opening": [
+        2661,
+        91571
+    ],
+    "Barnes Opening": [
+        1932,
+        55852
+    ],
+    "Benko Gambit": [
+        10430,
+        366283
+    ],
+    "Semi-Benoni": [
+        3300,
+        118866
+    ],
+    "Benko Gambit Declined": [
+        1992,
+        71781
+    ],
+    "Hippopotamus Defense": [
+        3087,
+        97740
+    ],
+    "Crab Opening": [
+        1237,
+        37190
+    ],
+    "Creepy Crawly Formation": [
+        2292,
+        75753
+    ],
+    "Lemming Defense": [
+        1279,
+        36451
+    ],
+    "Irish Gambit": [
+        751,
+        17573
+    ],
+    "Scotch Gambit": [
+        1592,
+        47186
+    ],
+    "Sodium Attack": [
+        2515,
+        75491
+    ],
+    "Queen's Indian Accelerated": [
+        3621,
+        128893
+    ],
+    "System": [
+        1090,
+        38249
+    ],
+    "Rubinstein Opening": [
+        2315,
+        82828
+    ],
+    "Zaire Defense": [
+        77,
+        2482
+    ],
+    "Australian Defense": [
+        729,
+        21927
+    ],
+    "Robatsch Defense": [
+        1258,
+        44617
+    ],
+    "Montevideo Defense": [
+        743,
+        25782
+    ],
+    "Zukertort Defense": [
+        320,
+        9888
+    ],
+    "Tayler Opening": [
+        100,
+        3187
+    ],
+    "Bronstein Gambit": [
+        457,
+        15738
+    ],
+    "Semi-Slav Defense Accepted": [
+        1391,
+        48551
+    ],
+    "Four Knights": [
+        110,
+        3085
+    ],
+    "English Orangutan": [
+        492,
+        17287
+    ],
+    "Blackmar-Diemer": [
+        420,
+        12113
+    ],
+    "Blumenfeld Countergambit Accepted": [
+        129,
+        4180
+    ],
+    "Vulture Defense": [
+        442,
+        16747
+    ],
+    "Doery Defense": [
+        588,
+        17937
+    ],
+    "Global Opening": [
+        1333,
+        43049
+    ],
+    "Dresden Opening": [
+        11,
+        365
+    ],
+    "Borg Opening": [
+        103,
+        3318
+    ],
+    "Formation": [
+        14,
+        460
+    ],
+    "Boden-Kieseritzky Gambit": [
+        57,
+        1698
+    ],
+    "Norwegian Defense": [
+        29,
+        1009
+    ],
+    "Ruy Lopez Defense": [
+        152,
+        3932
+    ],
+    "Marienbad System": [
+        83,
+        3210
+    ],
+    "Venezolana Opening": [
+        48,
+        1671
+    ],
+    "Amsterdam Attack": [
+        39,
+        1278
+    ],
+    "English Rat": [
+        78,
+        2653
+    ],
+    "Veresov Opening": [
+        9,
+        261
+    ],
+    "Spanish Opening": [
+        6,
+        201
+    ],
+    "Amar Gambit": [
+        7,
+        222
+    ],
+    "Queen's Indian": [
+        3,
+        101
+    ],
+    "English Openings": [
+        1,
+        18
+    ]
+}
