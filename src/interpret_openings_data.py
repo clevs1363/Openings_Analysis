@@ -1,13 +1,12 @@
-import scipy
 import json
 import numpy as np
 
 # Opening JSON files
-f = open('openings_avg.json')
+f = open('../data/openings_avg.json')
 openings_avg = json.load(f)
 f.close()
 
-f = open('openings.json')
+f = open('../data/openings.json')
 openings = json.load(f)
 f.close()
 
@@ -71,8 +70,8 @@ while line:
     
     line = f.readline()
 
-with open('cumulative_stats.json', 'w') as convert_file:
+with open('../data/cumulative_stats.json', 'w') as convert_file:
     convert_file.write(json.dumps(cumulative_stats))
 
-with open('minmax_opening_lengths.json', 'w') as convert_file:
+with open('../data/minmax_opening_lengths.json', 'w') as convert_file:
     convert_file.write(json.dumps(minmax_opening_lengths))

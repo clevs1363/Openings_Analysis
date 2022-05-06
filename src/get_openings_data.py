@@ -38,10 +38,10 @@ while line:
 
 openings_to_avg = {opening: nums[1]/nums[0] for (opening, nums) in openings.items()}
 
-with open('openings.json', 'w') as convert_file:
+with open('../data/openings.json', 'w') as convert_file:
   convert_file.write(json.dumps(openings))
 
-with open('openings_avg.json', 'w') as convert_file:
+with open('../data/openings_avg.json', 'w') as convert_file:
   convert_file.write(json.dumps(openings_to_avg))
 
-print(openings_to_avg["Center Game"])
+# print(openings_to_avg["Center Game"])
