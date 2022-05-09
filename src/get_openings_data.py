@@ -7,6 +7,7 @@ f = open("C:/Users/Michael Cleversley/Downloads/lichess_data/apr18.pgn")
 line = f.readline()
 openings = {} # will map openings to a tuple of (times_found, total_moves)
 current_opening = ""
+current_termination = ""
 while line:
   if line == "\n": # skip blank lines
     line = f.readline()
@@ -20,7 +21,10 @@ while line:
     comma_i = line.find(",") if line.find(",") != -1 else 100000
     pound_i = line.find("#") if line.find("#") != -1 else 100000
     current_opening = line[space_i:min(colon_i, comma_i, pound_i)].strip()
-  if line[0] == "1":
+  if "Termination" in line:
+    line = line.replace("\"", "").replace("]", "").replace("\n", "")
+    current_termination = line.split(" ")[1]
+  if line[0] == "1" and current_termination != "Abandoned":
     line = line.rstrip().replace(".", "")
     line = line.split(" ")
     num_moves = -1

@@ -1,10 +1,10 @@
 {
-    "avg_mov_num": 33.05566912707,
-    "sd_mov_num": 3.3623024443230087,
+    "avg_mov_num": 31.47465138326877,
+    "sd_mov_num": 2.5204222857610747,
     "min_opening": "King's Pawn",
-    "min_opening_samples": 24647,
-    "min_mov_num": 7.2276950541648075,
-    "max_opening": "Marienbad System",
-    "max_opening_samples": 83,
-    "max_mov_num": 38.674698795180724
+    "min_opening_samples": 4644,
+    "min_mov_num": 21.521102497846684,
+    "max_opening": "King's Indian",
+    "max_opening_samples": 1101,
+    "max_mov_num": 36.285714285714285
 }

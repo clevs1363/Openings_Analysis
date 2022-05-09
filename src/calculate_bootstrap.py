@@ -20,8 +20,8 @@ min_opening_data = np.asarray(minmax_opening_lengths[min_opening_name])
 max_opening_data = np.asarray(minmax_opening_lengths[max_opening_name])
 
 #-- calculate 95% confidence intervals --#
-min_ci = bootstrap((min_opening_data,), np.average, confidence_level=0.95).confidence_interval
-max_ci = bootstrap((max_opening_data,), np.average, confidence_level=0.95).confidence_interval
+min_ci = bootstrap((min_opening_data,), np.average, confidence_level=0.90).confidence_interval
+max_ci = bootstrap((max_opening_data,), np.average, confidence_level=0.90).confidence_interval
 
 inference_stats.update({
     "min_ci": min_ci,
@@ -34,21 +34,28 @@ ci_contains_true_min_avg = 0
 ci_contains_true_max_avg = 0
 rng = np.random.default_rng()
 
-true_min_avg = cumulative_stats["avg_mov_num"]
-true_max_avg = cumulative_stats["avg_mov_num"]
+true_min_avg = cumulative_stats["min_mov_num"]
+true_max_avg = cumulative_stats["max_mov_num"]
+
+print("true_min_avg: " + str(true_min_avg))
 
 for i in range(n_trials):
-    min_data = random.choices(min_opening_data, k=min(cumulative_stats["min_opening_samples"], 1000)) # sample with replacement
+    min_data = random.choices(min_opening_data, k=cumulative_stats["min_opening_samples"]) # sample with replacement
     max_data = random.choices(max_opening_data, k=cumulative_stats["max_opening_samples"]) # sample with replacement
 
-    min_ci = bootstrap((min_data,), np.average, confidence_level=0.95, n_resamples=100, random_state=rng).confidence_interval
-    max_ci = bootstrap((max_data,), np.average, confidence_level=0.95, n_resamples=100, random_state=rng).confidence_interval
+    min_ci = bootstrap((min_data,), np.average, confidence_level=0.90, n_resamples=100, random_state=rng).confidence_interval
+    max_ci = bootstrap((max_data,), np.average, confidence_level=0.90, n_resamples=100, random_state=rng).confidence_interval
+
+    
 
     if min_ci[0] < true_min_avg < min_ci[1]:
        ci_contains_true_min_avg += 1
 
     if max_ci[0] < true_max_avg < max_ci[1]:
        ci_contains_true_max_avg += 1
+
+print(ci_contains_true_min_avg)
+print(ci_contains_true_max_avg)
 
 # get p-values
 min_pvalue = ci_contains_true_min_avg/1000

@@ -19,7 +19,12 @@ cumulative_stats["avg_mov_num"] = avg_num_moves
 cumulative_stats["sd_mov_num"] = sd_num_moves
 
 # get min opening, avg move num, and sample size
-min_opening = min(openings_avg, key=openings_avg.get)
+min_opening = ""
+cur_min = 999999
+for (key, value) in openings_avg.items():
+    if openings[key][0] > 1000 and value < cur_min:
+        min_opening = key
+        cur_min = value
 min_opening_samples = openings[min_opening][0] # value of openings dict is an array, first value being the number of games sampled
 min_avg = openings_avg[min(openings_avg, key=openings_avg.get)]
 cumulative_stats.update({
@@ -28,8 +33,13 @@ cumulative_stats.update({
     "min_mov_num": min_avg
 })
 
-# get min opening
-max_opening = max(openings_avg, key=openings_avg.get)
+# get max opening
+max_opening = ""
+cur_max = 0
+for (key, value) in openings_avg.items():
+    if openings[key][0] > 1000 and value > cur_max:
+        max_opening = key
+        cur_max = value
 max_opening_samples = openings[max_opening][0] # value of openings dict is an array, first value being the number of games sampled
 max_avg = openings_avg[max(openings_avg, key=openings_avg.get)]
 cumulative_stats.update({
@@ -46,6 +56,7 @@ minmax_opening_lengths = {max_opening: [], min_opening: []}
 f = open("C:/Users/Michael Cleversley/Downloads/lichess_data/apr18.pgn")
 line = f.readline()
 current_opening = ""
+current_termination = ""
 while line:
     if line == "\n": # skip blank lines
         line = f.readline()
@@ -58,7 +69,11 @@ while line:
         comma_i = line.find(",") if line.find(",") != -1 else 100000
         pound_i = line.find("#") if line.find("#") != -1 else 100000
         current_opening = line[space_i:min(colon_i, comma_i, pound_i)].strip()
-    if (current_opening == max_opening or current_opening == min_opening) and line[0] == "1":
+    if "Termination" in line:
+        line = line.replace("\"", "").replace("]", "").replace("\n", "")
+        current_termination = line.split(" ")[1]
+        print(current_termination)
+    if (current_opening == max_opening or current_opening == min_opening) and current_termination != "Abandoned" and line[0] == "1":
         line = line.rstrip().replace(".", "")
         line = line.split(" ")
         num_moves = -1
