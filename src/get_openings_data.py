@@ -3,7 +3,7 @@
 from ctypes import pointer
 import json
 
-f = open("C:/Users/Michael Cleversley/Downloads/lichess_data/apr18.pgn")
+f = open("C:/Users/cleve/Downloads/lichess_data/apr18.pgn")
 line = f.readline()
 openings = {} # will map openings to a tuple of (times_found, total_moves)
 current_opening = ""
@@ -47,5 +47,3 @@ with open('../data/openings.json', 'w') as convert_file:
 
 with open('../data/openings_avg.json', 'w') as convert_file:
   convert_file.write(json.dumps(openings_to_avg))
-
-# print(openings_to_avg["Center Game"])

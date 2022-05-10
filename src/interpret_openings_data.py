@@ -25,8 +25,12 @@ for (key, value) in openings_avg.items():
     if openings[key][0] > 1000 and value < cur_min:
         min_opening = key
         cur_min = value
+# for (key, value) in openings_avg.items(): # ignores 1000 game minimum
+#     if value < cur_min:
+#         min_opening = key
+#         cur_min = value
 min_opening_samples = openings[min_opening][0] # value of openings dict is an array, first value being the number of games sampled
-min_avg = openings_avg[min(openings_avg, key=openings_avg.get)]
+min_avg = openings_avg[min_opening]
 cumulative_stats.update({
     "min_opening": min_opening,
     "min_opening_samples": min_opening_samples,
@@ -40,8 +44,12 @@ for (key, value) in openings_avg.items():
     if openings[key][0] > 1000 and value > cur_max:
         max_opening = key
         cur_max = value
+# for (key, value) in openings_avg.items(): # ignores 1000 game minimum
+#     if value > cur_max:
+#         max_opening = key
+#         cur_max = value
 max_opening_samples = openings[max_opening][0] # value of openings dict is an array, first value being the number of games sampled
-max_avg = openings_avg[max(openings_avg, key=openings_avg.get)]
+max_avg = openings_avg[max_opening]
 cumulative_stats.update({
     "max_opening": max_opening,
     "max_opening_samples": max_opening_samples,
@@ -53,7 +61,7 @@ cumulative_stats.update({
 
 minmax_opening_lengths = {max_opening: [], min_opening: []}
 
-f = open("C:/Users/Michael Cleversley/Downloads/lichess_data/apr18.pgn")
+f = open("C:/Users/cleve/Downloads/lichess_data/apr18.pgn")
 line = f.readline()
 current_opening = ""
 current_termination = ""
@@ -72,8 +80,8 @@ while line:
     if "Termination" in line:
         line = line.replace("\"", "").replace("]", "").replace("\n", "")
         current_termination = line.split(" ")[1]
-        print(current_termination)
-    if (current_opening == max_opening or current_opening == min_opening) and current_termination != "Abandoned" and line[0] == "1":
+        # print(current_termination)
+    if (current_opening == max_opening or current_opening == min_opening) and line[0] == "1" and current_termination != "Abandoned":
         line = line.rstrip().replace(".", "")
         line = line.split(" ")
         num_moves = -1
@@ -82,7 +90,7 @@ while line:
                 num_moves = int(unit)
                 break
         minmax_opening_lengths[current_opening].append(num_moves)
-    
+
     line = f.readline()
 
 with open('../data/cumulative_stats.json', 'w') as convert_file:

@@ -1,10 +1,1 @@
-{
-    "avg_mov_num": 31.47465138326877,
-    "sd_mov_num": 2.5204222857610747,
-    "min_opening": "King's Pawn",
-    "min_opening_samples": 4644,
-    "min_mov_num": 21.521102497846684,
-    "max_opening": "King's Indian",
-    "max_opening_samples": 1101,
-    "max_mov_num": 36.285714285714285
-}
+{"avg_mov_num": 33.16093909498992, "sd_mov_num": 2.859557882470133, "min_opening": "King's Pawn", "min_opening_samples": 7415, "min_mov_num": 21.69898853674983, "max_opening": "King's Indian", "max_opening_samples": 1686, "max_mov_num": 38.434756820877816}
